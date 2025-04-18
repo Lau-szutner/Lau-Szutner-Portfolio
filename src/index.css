@@ -9,22 +9,67 @@ body {
   background-color: black;
 }
 /* Light Italic */
-.light-italic {
+/* Base Montserrat */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
   font-family: 'Montserrat', sans-serif;
+}
+
+/* Light */
+.light {
+  font-weight: 300;
+}
+
+/* Light Italic */
+.light-italic {
   font-weight: 300;
   font-style: italic;
 }
 
+/* Regular */
+.regular {
+  font-weight: 400;
+}
+
+/* Regular Italic */
+.regular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* SemiBold */
+.semibold {
+  font-weight: 600;
+}
+
 /* SemiBold Italic */
 .semibold-italic {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-style: italic;
 }
 
+/* Bold */
+.bold {
+  font-weight: 700;
+}
+
+/* Bold Italic */
+.bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ExtraBold */
+.extrabold {
+  font-weight: 800;
+}
+
 /* ExtraBold Italic */
 .extrabold-italic {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-style: italic;
 }
