@@ -1,9 +1,9 @@
 function Header() {
   return (
-    <header className="">
-      <div className="h-screen grid grid-cols-2 place-items-center">
+    <header className="w-full ">
+      <div className="h-screen grid grid-cols-2 place-items-center ">
         <div className="text-start">
-          <div className="text-7xl font-bold text-primary">
+          <div className="text-7xl text-primary extrabold-italic">
             <p>Lautaro</p>
             <p>Fernandez</p>
             <p>Szutner</p>
