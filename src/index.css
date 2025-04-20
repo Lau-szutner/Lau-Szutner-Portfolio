@@ -73,3 +73,9 @@ p {
   font-weight: 800;
   font-style: italic;
 }
+.background {
+  background-image: url('/backgroun-1.png'); /* 🔄 No pongas '/public' */
+  background-size: contain;
+  background-position: right center; /* 🔄 Aquí está la clave */
+  background-repeat: no-repeat;
+}
