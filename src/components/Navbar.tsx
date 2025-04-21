@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="w-full  flex justify-center">
+    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center bg-black">
       <ul className="flex justify-center w-full text-2xl font-medium text-white w-10/12">
         {['Inicio', 'Quién soy', 'Proyectos', 'Habilidades', 'Contacto'].map(
           (item, idx) => (
