@@ -26,15 +26,24 @@ function Header() {
             </button>
           </div>
         </div>
-
+        <div className="card">
+          <h1>Animate Borders</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ad
+            exercitationem voluptatem ullam et, natus impedit quae veniam optio
+            a doloremque officiis beatae, itaque nesciunt nostrum quasi
+            molestiae laudantium dolor asperiores soluta sint sed ratione
+            cupiditate. Laudantium earum reiciendis enim.
+          </p>
+        </div>
         <div className="flex flex-col items-center gap-5 ">
-          <div className="card">
+          {/* <div className="card">
             <img
               src="/photo-perfil.png"
               alt="Foto de perfil"
               className="imagen"
             />
-          </div>
+          </div> */}
 
           {/* <p className="text-xl w-9/12 ">
             Full Stack Developer Turning ideas into responsive, scalable, and

@@ -1,73 +1,20 @@
-@import 'tailwindcss';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Estilos personalizados */
-body,
-h1,
-h2,
-h3,
-h4,
-p {
-  font-family: 'Bai Jamjuree', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-/* Light */
-.light {
-  font-weight: 300;
+html {
+  font-family: Poppins;
+  color: #f0f0f0;
 }
-
-/* Light Italic */
-.light-italic {
-  font-weight: 300;
-  font-style: italic;
+body {
+  min-height: 100vh;
+  background: #0b0d15;
+  color: #a2a5b3;
+  align-content: center;
 }
-
-/* Regular */
-.regular {
-  font-weight: 400;
+h1 {
+  color: white;
 }
-
-/* Regular Italic */
-.regular-italic {
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* SemiBold */
-.semibold {
-  font-weight: 600;
-}
-
-/* SemiBold Italic */
-.semibold-italic {
-  font-weight: 600;
-  font-style: italic;
-}
-
-/* Bold */
-.bold {
-  font-weight: 700;
-}
-
-/* Bold Italic */
-.bold-italic {
-  font-weight: 700;
-  font-style: italic;
-}
-
-/* ExtraBold */
-.extrabold {
-  font-weight: 800;
-}
-
-/* ExtraBold Italic */
-.extrabold-italic {
-  font-weight: 800;
-  font-style: italic;
-}
-
 .card {
   margin: 0 auto;
   padding: 2em;
@@ -102,7 +49,7 @@ p {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 3px;
+  padding: 10px;
   border-radius: 10px;
   animation: 3s spin linear infinite;
 }
