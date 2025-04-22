@@ -2,7 +2,7 @@ import Experience from './Experience';
 
 const About = () => {
   return (
-    <div className="w-full py-10">
+    <div className="h-screen overflow-hidden background-2">
       <div className="flex flex-col items-center">
         <div className="grid grid-cols-2">
           <div></div>
