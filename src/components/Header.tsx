@@ -9,7 +9,7 @@ function Header() {
               I'm
             </p>
           </div>
-          <div className="text-5xl sm:text-6xl md:text-7xl  ">
+          <div className=" sm:text-6xl md:text-7xl  ">
             <p>Lautaro</p>
             <p>Fernandez</p>
             <p>Szutner</p>
@@ -21,9 +21,7 @@ function Header() {
             <button className="bg-gray-500 w-fit px-5 py-3 rounded-md">
               Github
             </button>
-            <button className="bg-gray-500 w-fit px-5 py-3 rounded-md">
-              Github
-            </button>
+            <button className="bg-blue-500 p-4">Github</button>
           </div>
         </div>
         <div className="card">

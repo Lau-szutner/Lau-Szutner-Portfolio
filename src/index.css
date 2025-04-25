@@ -1,4 +1,6 @@
-* {
+@import 'tailwindcss';
+
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -64,4 +66,4 @@ h1 {
   to {
     --angle: 360deg;
   }
-}
+} */
