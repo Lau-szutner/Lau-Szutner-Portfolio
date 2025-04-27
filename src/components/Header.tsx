@@ -1,3 +1,5 @@
+import Card from './Card';
+
 function Header() {
   return (
     <header className="h-screen overflow-hidden background">
@@ -24,16 +26,7 @@ function Header() {
             <button className="bg-blue-500 p-4">Github</button>
           </div>
         </div>
-        <div className="card">
-          <h1>Animate Borders</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ad
-            exercitationem voluptatem ullam et, natus impedit quae veniam optio
-            a doloremque officiis beatae, itaque nesciunt nostrum quasi
-            molestiae laudantium dolor asperiores soluta sint sed ratione
-            cupiditate. Laudantium earum reiciendis enim.
-          </p>
-        </div>
+        <Card />
         <div className="flex flex-col items-center gap-5 ">
           {/* <div className="card">
             <img
