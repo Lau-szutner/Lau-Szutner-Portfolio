@@ -1,10 +1,9 @@
-.card {
+.rgb {
   margin: 0 auto;
-  padding: 2em;
   width: 300px;
   background: #1c1f2b;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 8px;
   position: relative;
 }
 
@@ -14,8 +13,8 @@
   inherits: false;
 }
 
-.card::after,
-.card::before {
+.rgb::after,
+.rgb::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -36,7 +35,7 @@
   border-radius: 10px;
   animation: 3s spin linear infinite;
 }
-.card::before {
+.rgb::before {
   filter: blur(1.5rem);
   opacity: 0.5;
 }
@@ -48,4 +47,36 @@
   to {
     --angle: 360deg;
   }
+}
+
+.line {
+  margin: 0 auto;
+  width: 300px;
+  background: #1c1f2b;
+  border-radius: 8px;
+  position: relative;
+}
+
+.line::after,
+.line::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 50%,
+    rgb(0, 255, 234)
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 5px;
+  border-radius: 8px;
+  animation: 3s spin linear infinite;
+}
+.line::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
 }

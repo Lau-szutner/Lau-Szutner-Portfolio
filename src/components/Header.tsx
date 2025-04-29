@@ -7,11 +7,11 @@ function Header() {
         <div className="text-start flex flex-col gap-5">
           <div className="text-5xl sm:text-6xl md:text-7xl mb-10">
             <p>
-              <span className="text-primary"> Hey there!, </span>
+              <span className="text-accent"> Hey there!, </span>
               I'm
             </p>
           </div>
-          <div className=" sm:text-6xl md:text-7xl  ">
+          <div className="sm:text-6xl md:text-7xl ">
             <p>Lautaro</p>
             <p>Fernandez</p>
             <p>Szutner</p>
@@ -26,15 +26,15 @@ function Header() {
             <button className="bg-blue-500 p-4">Github</button>
           </div>
         </div>
-        <Card />
+
         <div className="flex flex-col items-center gap-5 ">
-          {/* <div className="card">
+          <div className="line">
             <img
               src="/photo-perfil.png"
               alt="Foto de perfil"
-              className="imagen"
+              className="rounded-lg"
             />
-          </div> */}
+          </div>
 
           {/* <p className="text-xl w-9/12 ">
             Full Stack Developer Turning ideas into responsive, scalable, and
