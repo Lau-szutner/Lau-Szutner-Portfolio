@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import About from './components/About.';
+import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       {/* <Navbar></Navbar> */}
       <Header />
-      {/* <About /> */}
+      <Projects />
     </>
   );
 }
