@@ -1,4 +1,4 @@
-import Card from './Card';
+import Button from './Button';
 
 function Header() {
   return (
@@ -17,13 +17,9 @@ function Header() {
             <p>Szutner</p>
           </div>
           <div className="flex gap-4">
-            <button className="bg-gray-500 w-fit px-5 py-3 rounded-md">
+            <Button link={'https://github.com/Lau-szutner/portfolio'}>
               Github
-            </button>
-            <button className="bg-gray-500 w-fit px-5 py-3 rounded-md">
-              Github
-            </button>
-            <button className="bg-blue-500 p-4">Github</button>
+            </Button>
           </div>
         </div>
 
@@ -35,11 +31,6 @@ function Header() {
               className="rounded-lg"
             />
           </div>
-
-          {/* <p className="text-xl w-9/12 ">
-            Full Stack Developer Turning ideas into responsive, scalable, and
-            user-friendly digital experiences.
-          </p> */}
         </div>
       </div>
     </header>

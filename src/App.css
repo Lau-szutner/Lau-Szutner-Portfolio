@@ -1,4 +1,4 @@
-.rgb {
+/* .rgb {
   margin: 0 auto;
   width: 300px;
   background: #1c1f2b;
@@ -38,7 +38,7 @@
 .rgb::before {
   filter: blur(1.5rem);
   opacity: 0.5;
-}
+} */
 
 @keyframes spin {
   from {
@@ -56,7 +56,11 @@
   border-radius: 8px;
   position: relative;
 }
-
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
 .line::after,
 .line::before {
   content: '';
