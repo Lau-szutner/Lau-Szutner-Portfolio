@@ -11,7 +11,7 @@ function Header() {
               I'm
             </p>
           </div>
-          <div className="sm:text-6xl md:text-7xl ">
+          <div className="sm:text-6xl md:text-7xl font-bold">
             <p>Lautaro</p>
             <p>Fernandez</p>
             <p>Szutner</p>
