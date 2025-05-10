@@ -6,7 +6,15 @@ const Projects = () => {
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-center w-full">
         Projects
       </h2>
-      <Project skill1="HTML" skill2="css" skill3="js"></Project>
+
+      {}
+      <Project
+  skills={[
+    { iconName: "css", label: "CSS3" },
+
+  ]}
+/>
+
     </div>
   );
 };
