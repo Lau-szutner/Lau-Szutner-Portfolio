@@ -7,11 +7,10 @@ const Projects = () => {
         Projects
       </h2>
 
-      {}
+      
       <Project
   skills={[
-    { iconName: "css", label: "CSS3" },
-
+    { iconName: "css", label: "CSS3" },{ iconName: "html", label: "HTML5" }
   ]}
 />
 
