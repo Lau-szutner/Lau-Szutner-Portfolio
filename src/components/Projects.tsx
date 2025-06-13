@@ -7,13 +7,13 @@ const Projects = () => {
         Projects
       </h2>
 
-      
       <Project
-  skills={[
-    { iconName: "css", label: "CSS3" },{ iconName: "html", label: "HTML5" }
-  ]}
-/>
-
+        skills={[
+          { iconName: 'css', label: 'CSS3' },
+          { iconName: 'html', label: 'HTML5' },
+          { iconName: 'react', label: 'React' },
+        ]}
+      />
     </div>
   );
 };
