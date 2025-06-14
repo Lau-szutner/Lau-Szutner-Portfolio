@@ -27,7 +27,8 @@ const Project: React.FC<ProjectProps> = ({ skills, title }) => {
         {/* ← Aquí también agregué el title */}
         <div className="p-5">
           <p className="text-2xl font-bold mb-2">Used:</p>
-          <ul className="space-y-2">
+
+          <ul className="space-y-2 grid grid-cols-2">
             {skills.map((skill, index) => {
               const Icon = icons[skill.iconName];
               return (
