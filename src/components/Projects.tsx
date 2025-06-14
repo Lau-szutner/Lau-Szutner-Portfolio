@@ -12,6 +12,7 @@ const Projects = () => {
           { iconName: 'css', label: 'CSS3' },
           { iconName: 'html', label: 'HTML5' },
           { iconName: 'react', label: 'React' },
+          { iconName: 'javascript', label: 'Javascript' },
         ]}
       />
     </div>
