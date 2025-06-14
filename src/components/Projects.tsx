@@ -13,6 +13,13 @@ const Projects = () => {
           { iconName: 'html', label: 'HTML5' },
           { iconName: 'react', label: 'React' },
           { iconName: 'javascript', label: 'Javascript' },
+          { iconName: 'typescript', label: 'Typescript' },
+          { iconName: 'nextjs', label: 'Nextjs' },
+          { iconName: 'sequelize', label: 'Sequelize' },
+          { iconName: 'git', label: 'Git' },
+          { iconName: 'nodejs', label: 'Nodejs' },
+
+          { iconName: 'express', label: 'Express' },
         ]}
         title={'MoneyMind'}
       />
