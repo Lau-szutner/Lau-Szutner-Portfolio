@@ -1,15 +1,16 @@
-import icons from "../assets/icons";
+import icons from '../assets/icons';
 
-type ProjectSkill = {
+interface ProjectSkill {
   iconName: keyof typeof icons;
   label: string;
-};
+}
 
-type ProjectProps = {
+interface ProjectProps {
   skills: ProjectSkill[];
-};
+  title: string;
+}
 
-const Project: React.FC<ProjectProps> = ({ skills }) => {
+const Project: React.FC<ProjectProps> = ({ skills, title }) => {
   return (
     <div className="relative flex items-center justify-center group">
       {/* Glow de fondo */}
@@ -22,6 +23,8 @@ const Project: React.FC<ProjectProps> = ({ skills }) => {
           alt="Project"
           className="rounded-t-lg"
         />
+        <h1 className="text-3xl text-center m-4 font-bold">{title}</h1>{' '}
+        {/* ← Aquí también agregué el title */}
         <div className="p-5">
           <p className="text-2xl font-bold mb-2">Used:</p>
           <ul className="space-y-2">

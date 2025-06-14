@@ -14,6 +14,7 @@ const Projects = () => {
           { iconName: 'react', label: 'React' },
           { iconName: 'javascript', label: 'Javascript' },
         ]}
+        title={'MoneyMind'}
       />
     </div>
   );
