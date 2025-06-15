@@ -26,7 +26,7 @@ const Project: React.FC<ProjectProps> = ({ skills, title }) => {
         <h1 className="text-3xl text-center m-4 font-bold">{title}</h1>{' '}
         {/* ← Aquí también agregué el title */}
         <div className="p-5">
-          <p className="text-2xl font-bold mb-2">Used:</p>
+          <p className="text-2xl font-bold mb-2">technologies:</p>
 
           <ul className="space-y-2 grid grid-cols-2">
             {skills.map((skill, index) => {
