@@ -1,12 +1,12 @@
-import Project from './Project';
-
+// import Project from './Project';
+import ProjectCard from './ProjectsCard';
 const Projects = () => {
   return (
     <div className="h-screen  flex flex-col place-items-center gap-5">
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-center w-full">
         Projects
       </h2>
-      <div className="grid grid-cols-2 gap-10">
+      {/* <div className="grid grid-cols-2 gap-10">
         <Project
           title={'MoneyMind'}
           skills={[
@@ -31,7 +31,9 @@ const Projects = () => {
             { iconName: 'git', label: 'Git' },
           ]}
         />
-      </div>
+      </div> */}
+
+      <ProjectCard></ProjectCard>
     </div>
   );
 };
