@@ -9,7 +9,11 @@
 }
 
 body {
-  background: #0b0d15;
+  /* background: #0b0d15; */
+
+  /* neutral 950 */
+  background: oklch(20.5% 0 0);
+
   font-family: 'Bai Jamjuree', sans-serif;
 }
 
