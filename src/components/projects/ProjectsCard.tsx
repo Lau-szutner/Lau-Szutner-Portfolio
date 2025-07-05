@@ -1,5 +1,5 @@
-import myImage from '../assets/projects/project-1.svg';
-import icons from '../assets/icons';
+import myImage from '../../assets/projects/project-1.svg';
+import icons from '../../assets/icons';
 
 interface ProjectSkill {
   iconName: keyof typeof icons;
