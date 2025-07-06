@@ -1,22 +1,34 @@
 import React from 'react';
 
+import AboutMeCard from './AboutMeCard';
 const AboutMe: React.FC = () => {
   return (
-    <section className="w-full h-screen flex justify-center">
+    <div className="min-h-screen flex flex-col place-items-center gap-5 my-20 grid place-items-center">
       {' '}
-      <div className="w-fit h-fit !box-border relative group">
-        {/* Glow de fondo que aparece al hacer hover, con blur solo en el fondo */}
-        <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
+      <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full mb-15">
+        About me
+      </h2>
+      <div className="w-10/12 ">
+        <AboutMeCard
+          titleBold=""
+          body="Hi! I’m Lautaro Fernández Szutner, a Full Stack Web Developer based in Buenos Aires. I love turning ideas into clean, functional, and user-friendly web applications."
+          width="w-5/12"
+        ></AboutMeCard>
+        <div className="flex gap-5">
+          <AboutMeCard
+            titleBold="Location:"
+            body="Buenos Aires"
+            width="w-fit"
+          ></AboutMeCard>
 
-        <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[#00ffea] grid grid-cols-2">
-          <div className="flex flex-col gap-1">
-            <p>
-              <span className="font-bold">Location: </span>Argentina
-            </p>
-          </div>
+          <AboutMeCard
+            titleBold="Education:"
+            body="Davinci institute BA"
+            width="w-fit"
+          ></AboutMeCard>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

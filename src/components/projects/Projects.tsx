@@ -3,7 +3,7 @@ import ProjectCard from './ProjectsCard';
 
 const Projects = () => {
   return (
-    <div className="h-screen  flex flex-col place-items-center gap-5">
+    <section className="min-h-screen flex flex-col place-items-center gap-5">
       <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full mb-15">
         Projects
       </h2>
@@ -49,7 +49,7 @@ const Projects = () => {
           { iconName: 'express', label: 'Express' },
         ]}
       ></ProjectCard>
-    </div>
+    </section>
   );
 };
 
