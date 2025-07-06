@@ -1,13 +1,11 @@
-import HomeIcon from '../../assets/About/HomeIcon';
-
 interface Props {
   titleBold: string;
   body: string;
   width: string;
-  icon: svg;
+  icon: React.ReactNode; // 👈 Nuevo!
 }
 
-const AboutMeCard: React.FC<Props> = ({ titleBold, body, width }) => {
+const AboutMeCard: React.FC<Props> = ({ titleBold, body, width, icon }) => {
   return (
     <div className={`${width} h-fit !box-border relative group`}>
       {/* Glow de fondo que aparece al hacer hover, con blur solo en el fondo */}
@@ -19,7 +17,7 @@ const AboutMeCard: React.FC<Props> = ({ titleBold, body, width }) => {
         }`}
       >
         <div className="flex gap-10">
-          <HomeIcon />
+          {icon}
           <div className="w-fit">
             <span className="font-bold text-2xl">{titleBold} </span>
             <p className="text-2xl">{body}</p>

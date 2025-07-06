@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeIcon from '../../assets/About/HomeIcon';
 
 import AboutMeCard from './AboutMeCard';
 const AboutMe: React.FC = () => {
@@ -19,12 +20,14 @@ const AboutMe: React.FC = () => {
             titleBold="Location:"
             body="Buenos Aires"
             width="w-fit"
+            icon={<HomeIcon />} // 👈 Aquí pasas el ícono
           ></AboutMeCard>
 
           <AboutMeCard
             titleBold="Education:"
             body="Davinci institute BA"
             width="w-fit"
+            icon={<HomeIcon />} // 👈 Aquí pasas el ícono
           ></AboutMeCard>
         </div>
       </div>
