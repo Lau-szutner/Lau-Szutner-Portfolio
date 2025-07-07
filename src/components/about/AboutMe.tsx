@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeIcon from '../../assets/About/HomeIcon';
-
+import Education from '../../assets/About/Education';
+import Rocket from '../../assets/About/Rocket';
 import AboutMeCard from './AboutMeCard';
 const AboutMe: React.FC = () => {
   return (
@@ -9,26 +10,29 @@ const AboutMe: React.FC = () => {
       <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full mb-15">
         About me
       </h2>
-      <div className="w-10/12 ">
-        <AboutMeCard
-          titleBold=""
-          body="Hi! I’m Lautaro Fernández Szutner, a Full Stack Web Developer based in Buenos Aires. I love turning ideas into clean, functional, and user-friendly web applications."
-          width="w-5/12"
-        ></AboutMeCard>
-        <div className="flex gap-5">
+      <div className="w-10/12 grid grid-cols-2">
+        <div className="grid gap-5">
           <AboutMeCard
-            titleBold="Location:"
-            body="Buenos Aires"
-            width="w-fit"
-            icon={<HomeIcon />} // 👈 Aquí pasas el ícono
+            titleBold=""
+            body="Hi! I’m Lautaro Fernández Szutner, a Full Stack Web Developer based in Buenos Aires. I love turning ideas into clean, functional, and user-friendly web applications."
+            width="w-7/12"
+            icon={<Rocket />}
           ></AboutMeCard>
+          <div className="flex gap-5">
+            <AboutMeCard
+              titleBold="Location:"
+              body="Buenos Aires"
+              width="w-fit"
+              icon={<HomeIcon />} // 👈 Aquí pasas el ícono
+            ></AboutMeCard>
 
-          <AboutMeCard
-            titleBold="Education:"
-            body="Davinci institute BA"
-            width="w-fit"
-            icon={<HomeIcon />} // 👈 Aquí pasas el ícono
-          ></AboutMeCard>
+            <AboutMeCard
+              titleBold="Education:"
+              body="Davinci institute BA"
+              width="w-fit"
+              icon={<Education />} // 👈 Aquí pasas el ícono
+            ></AboutMeCard>
+          </div>
         </div>
       </div>
     </div>
