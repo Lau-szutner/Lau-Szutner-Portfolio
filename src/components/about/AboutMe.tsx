@@ -38,7 +38,7 @@ const AboutMe: React.FC = () => {
         About me
       </h2>
       <div className="w-10/12 grid grid-cols-[1fr_1fr] gap-5">
-        <div className="grid gap-5">
+        <div className="grid  justify-items-start h-fit gap-5">
           <AboutMeCard
             titleBold=""
             body="Hi! I’m Lautaro Fernández Szutner, a Full Stack Web Developer based in Buenos Aires. I love turning ideas into clean, functional, and user-friendly web applications."
