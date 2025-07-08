@@ -5,8 +5,30 @@ import Rocket from '../../assets/About/Rocket';
 import Jobs from '../../assets/About/Jobs';
 import AboutMeCard from './AboutMeCard';
 import Experience from './Experience';
+import ExperienceList from './ExperienceList';
 
 const AboutMe: React.FC = () => {
+  const jobsList = [
+    {
+      title: 'Frontend Developer at EliumNova',
+      dates: 'Jan 2024 - Present',
+      description:
+        'Building responsive web applications using React and Tailwind CSS, focusing on UI/UX improvements and performance optimization.',
+    },
+    {
+      title: 'Full Stack Developer at WebSolutions',
+      dates: 'Jun 2022 - Dec 2023',
+      description:
+        'Developed end-to-end web applications with MERN stack, integrating REST APIs and ensuring scalability.',
+    },
+    {
+      title: 'Junior Developer at CodeFactory',
+      dates: 'Jan 2021 - May 2022',
+      description:
+        'Assisted in building and maintaining client websites, writing clean code and improving website SEO and accessibility.',
+    },
+  ];
+
   return (
     <div
       className="h-screen flex flex-col gap-5 grid place-items-center w-full"
@@ -39,19 +61,17 @@ const AboutMe: React.FC = () => {
             ></AboutMeCard>
           </div>
         </div>
-        {/* <AboutMeCard
-          titleBold=""
-          body="Hi! I’m Lautaro Fernández Szutner, a Full Stack Web Developer based in Buenos Aires. I love turning ideas into clean, functional, and user-friendly web applications."
-          width="w-full"
-          icon={<Jobs />}
-        ></AboutMeCard> */}
 
-        <Experience
-          icon={<Jobs />} // 👈 Aquí pasas el ícono
-          title="EliumNova"
-          dates="12/12/2025 - 12/12/2025"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
-        ></Experience>
+        <ExperienceList icon={<Jobs />}>
+          {jobsList.map((job, index) => (
+            <Experience
+              key={index}
+              title={job.title}
+              dates={job.dates}
+              description={job.description}
+            />
+          ))}
+        </ExperienceList>
       </div>
     </div>
   );
