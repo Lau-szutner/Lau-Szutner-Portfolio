@@ -20,7 +20,7 @@ const AboutMeCard: React.FC<Props> = ({ titleBold, body, width, icon }) => {
           {icon}
           <div className="w-fit">
             <span className="font-bold text-2xl">{titleBold} </span>
-            <p className="text-2xl">{body}</p>
+            <p className="text-2xl inline">{body}</p>
           </div>
         </div>
       </div>
