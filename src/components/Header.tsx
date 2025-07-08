@@ -2,7 +2,7 @@ import Button from './Button';
 import Tilt from 'react-parallax-tilt';
 function Header() {
   return (
-    <header className="h-screen overflow-hidden background">
+    <header className="h-screen overflow-hidden background" id="Home">
       <div className="grid grid-cols-2 md:grid-cols-2 place-items-center h-full ">
         <div className="text-start flex flex-col gap-5">
           <div className="text-5xl sm:text-6xl md:text-7xl mb-10">
