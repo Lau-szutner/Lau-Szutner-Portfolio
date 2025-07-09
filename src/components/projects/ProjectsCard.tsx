@@ -13,7 +13,7 @@ interface ProjectProps {
 
 const ProjectCard: React.FC<ProjectProps> = ({ skills, title }) => {
   return (
-    <div className=" w-11/12 !box-border relative group">
+    <div className=" w-10/12 !box-border relative group">
       {/* Glow de fondo que aparece al hacer hover, con blur solo en el fondo */}
       <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
 

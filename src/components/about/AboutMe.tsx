@@ -31,10 +31,10 @@ const AboutMe: React.FC = () => {
 
   return (
     <div
-      className="h-screen flex flex-col gap-5 grid place-items-center w-full"
+      className="flex flex-col gap-5 grid place-items-center w-full pt-30"
       id="About"
     >
-      <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full">
+      <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full mb-15">
         About me
       </h2>
       <div className="w-10/12 grid grid-cols-[1fr_1fr] gap-5">

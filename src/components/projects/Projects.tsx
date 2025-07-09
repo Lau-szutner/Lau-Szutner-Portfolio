@@ -4,7 +4,7 @@ import ProjectCard from './ProjectsCard';
 const Projects = () => {
   return (
     <section
-      className="h-screen flex flex-col place-items-center gap-5 py-10"
+      className="h-min-screen flex flex-col place-items-center gap-5 pt-30 "
       id="Projects"
     >
       <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full mb-15">

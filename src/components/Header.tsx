@@ -8,7 +8,7 @@ function Header() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1500) {
-        setScale(1.7);
+        setScale(1.5);
       } else {
         setScale(1.2);
       }
@@ -20,7 +20,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="h-screen overflow-hidden background" id="Home">
+    <header className="h-fit overflow-hidden background py-30" id="Home ">
       <div className="grid grid-cols-2 md:grid-cols-2 place-items-center h-full">
         <div className="text-start flex flex-col gap-5">
           <div className="text-5xl sm:text-6xl md:text-7xl mb-6">
@@ -57,7 +57,7 @@ function Header() {
               <img
                 src="/photo-perfil.png"
                 alt="Foto de perfil"
-                className="rounded-lg"
+                className="rounded-lg "
               />
             </div>
           </Tilt>
