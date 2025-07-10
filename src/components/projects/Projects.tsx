@@ -21,7 +21,7 @@ const Projects = () => {
         Projects
       </h2>
       <div className="embla" ref={emblaRef}>
-        <div className="embla__container">
+        <div className="embla__container ">
           <ProjectCard
             title={'MoneyMind'}
             skills={[
