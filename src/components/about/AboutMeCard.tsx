@@ -16,9 +16,9 @@ const AboutMeCard: React.FC<Props> = ({ titleBold, body, width, icon }) => {
           titleBold === 'Home' ? 'border-green-500' : 'border-neutral-700'
         }`}
       >
-        <div className="flex gap-10">
+        <div className="flex gap-10 ">
           {icon}
-          <div className="w-fit">
+          <div className="w-fit grid">
             <span className="font-bold text-2xl">{titleBold} </span>
             <p className="text-2xl inline font-light">{body}</p>
           </div>
