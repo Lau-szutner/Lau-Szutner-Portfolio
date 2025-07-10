@@ -47,9 +47,12 @@ export default function GitHubStats() {
   }, []);
 
   return (
-    <section id="github-stats" className="py-20 relative">
+    <section
+      id="github-stats"
+      className="py-20 relative w-7/12 place-self-center"
+    >
       <div className="container mx-auto px-4">
-        <div className="w-full mx-auto">
+        <div className="w-full mx-auto grid gap-5">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">GitHub Public Stats</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
@@ -58,7 +61,7 @@ export default function GitHubStats() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center ">
             <StatCard icon="🐙" value={stats.repos} label="Repositories" />
             <StatCard icon="⭐" value={stats.stars} label="Stars" />
             <StatCard icon="🍴" value={stats.forks} label="Forks" />
@@ -90,31 +93,34 @@ export default function GitHubStats() {
             </div>
           </div>
 
-          <div className="glass-panel p-6 rounded-xl border border-gray-700 hover:border-green-400/30 transition-all mb-12">
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
-              <img
-                src={`https://github-readme-stats.vercel.app/api?username=lau-szutner&show_icons=true&hide_border=true&title_color=4ade80&icon_color=4ade80&text_color=ffffff&bg_color=00000000`}
-                alt="GitHub Stats"
-                className="w-full lg:w-1/2"
-              />
-              <img
-                src={`https://github-readme-stats.vercel.app/api/top-langs/?username=lau-szutner&layout=compact&hide_border=true&title_color=4ade80&icon_color=4ade80&text_color=ffffff&bg_color=00000000`}
-                alt="Top Languages"
-                className="w-full lg:w-1/2"
-              />
+          <div className={`w-full h-fit !box-border relative group`}>
+            <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
+
+            <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[#00ffea]">
+              <div className="grid grid-cols-2 gap-6 mx-auto place-items-center ">
+                <img
+                  src={`https://github-readme-stats.vercel.app/api?username=lau-szutner&show_icons=true&hide_border=true&title_color=4ade80&icon_color=4ade80&text_color=ffffff&bg_color=00000000`}
+                  alt="GitHub Stats"
+                  className="w-full"
+                />
+                <img
+                  src={`https://github-readme-stats.vercel.app/api/top-langs/?username=lau-szutner&layout=compact&hide_border=true&title_color=4ade80&icon_color=4ade80&text_color=ffffff&bg_color=00000000`}
+                  alt="Top Languages"
+                  className="w-full"
+                />
+              </div>
             </div>
           </div>
-
-          <div className="text-center mt-10">
-            <a
-              href="https://github.com/lau-szutner"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-green-500/20 hover:bg-green-500/30 border border-green-500/50 text-green-400 transition-all"
-            >
-              🐱‍💻 View Full GitHub Profile
-            </a>
-          </div>
+        </div>
+        <div className="text-center mt-10">
+          <a
+            href="https://github.com/lau-szutner"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-green-500/20 hover:bg-green-500/30 border border-green-500/50 text-green-400 transition-all"
+          >
+            🐱‍💻 View Full GitHub Profile
+          </a>
         </div>
       </div>
     </section>
