@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Button from './Button';
+import Button from '../Button';
 import Tilt from 'react-parallax-tilt';
 
 function Header() {
@@ -20,16 +20,19 @@ function Header() {
   }, []);
 
   return (
-    <header className="h-fit overflow-hidden background py-30" id="Home ">
-      <div className="grid grid-cols-2 md:grid-cols-2 place-items-center h-full">
+    <header
+      className="h-fit overflow-hidden background py-30 grid place-items-center"
+      id="Home "
+    >
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 place-items-center h-full lg:w-11/12 md:w-9/12 gap-15">
         <div className="text-start flex flex-col gap-5">
-          <div className="text-5xl sm:text-6xl md:text-7xl mb-6">
+          <div className="text-5xl md:text-6xl lg:text-8xl mb-6">
             <p>
-              <span className="text-accent"> Hey there! </span>
+              <span className="text-accent">Hey there!</span>
               I'm
             </p>
           </div>
-          <div className="sm:text-6xl md:text-7xl font-bold">
+          <div className="text-5xl md:text-6xl lg:text-8xl font-bold">
             <p>Lautaro</p>
             <p>Fernandez</p>
             <p>Szutner</p>

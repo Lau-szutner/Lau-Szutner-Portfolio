@@ -37,7 +37,7 @@ const AboutMe: React.FC = () => {
       <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full mb-15">
         About me
       </h2>
-      <div className="w-10/12 grid grid-cols-[1fr_1fr] gap-5">
+      <div className="w-9/12 grid grid-cols-[1fr_1fr] gap-5">
         <div className="grid  justify-items-start h-fit gap-5">
           <AboutMeCard
             titleBold=""

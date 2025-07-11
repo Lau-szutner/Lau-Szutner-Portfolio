@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export default function Github(props: SVGProps<SVGSVGElement>) {
+export default function GithubLogo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="48"

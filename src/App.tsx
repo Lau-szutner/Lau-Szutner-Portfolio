@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Header from './components/header/Header';
 import Projects from './components/projects/Projects';
 import AboutMe from './components/about/AboutMe';
-import Navbar from './components/Navbar';
-import GitHubStats from './components/GitHubStats';
+import GitHubStats from './components/githubStats/GitHubStats';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Navbar></Navbar>
       <Header />
       <Projects />
-      <AboutMe />
-      <GitHubStats />
+      {/* <AboutMe />
+      <GitHubStats /> */}
     </>
   );
 }

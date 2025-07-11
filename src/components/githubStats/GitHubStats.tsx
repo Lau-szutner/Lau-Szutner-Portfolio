@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Github from '../assets/github/github';
-import Arrow from '../assets/github/arrow';
+import GithubLogo from '../../assets/github/GithubLogo';
+import Arrow from '../../assets/github/arrow';
 
 type GitHubStats = {
   repos: number;
@@ -50,10 +50,7 @@ export default function GitHubStats() {
   }, []);
 
   return (
-    <section
-      id="github-stats"
-      className="py-20 relative w-7/12 place-self-center"
-    >
+    <section id="Github" className="py-20 relative w-7/12 place-self-center">
       <div className="container mx-auto px-4">
         <div className="w-full mx-auto grid gap-5">
           <div className="text-center mb-16">
@@ -66,7 +63,7 @@ export default function GitHubStats() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center ">
             <StatCard
-              icon={<Github />}
+              icon={<GithubLogo />}
               value={stats.repos}
               label="Repositories"
             />
@@ -136,8 +133,10 @@ export default function GitHubStats() {
   );
 }
 
+import { ReactNode } from 'react';
+
 type StatCardProps = {
-  icon: string;
+  icon: string | ReactNode;
   value: number | string;
   label: string;
 };
