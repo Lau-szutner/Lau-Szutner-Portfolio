@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Projects />
       <AboutMe />
-      {/* <GitHubStats /> */}
+      <GitHubStats />
     </>
   );
 }
