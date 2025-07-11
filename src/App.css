@@ -85,10 +85,6 @@
   opacity: 0.5;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer utilities {
   @keyframes fade-slide {
     0% {
