@@ -3,14 +3,14 @@ import Button from '../Button';
 import Tilt from 'react-parallax-tilt';
 
 function Header() {
-  const [scale, setScale] = useState(1.2);
+  const [scale, setScale] = useState(1);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1500) {
         setScale(1.5);
       } else {
-        setScale(1.2);
+        setScale(1);
       }
     };
 
@@ -54,13 +54,13 @@ function Header() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-5">
+        <div className="flex flex-col items-center">
           <Tilt tiltReverse={false} scale={scale}>
             <div className="line">
               <img
                 src="/photo-perfil.png"
                 alt="Foto de perfil"
-                className="rounded-lg "
+                className="rounded-lg"
               />
             </div>
           </Tilt>
