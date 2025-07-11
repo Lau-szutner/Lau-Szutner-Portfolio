@@ -11,8 +11,8 @@ function App() {
       <Navbar></Navbar>
       <Header />
       <Projects />
-      {/* <AboutMe />
-      <GitHubStats /> */}
+      <AboutMe />
+      {/* <GitHubStats /> */}
     </>
   );
 }

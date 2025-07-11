@@ -34,29 +34,29 @@ const AboutMe: React.FC = () => {
       className="flex flex-col gap-5 grid place-items-center w-full pt-30"
       id="About"
     >
-      <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full mb-15">
+      <h2 className="text-6xl md:text-6xl lg:text-8xl font-bold text-center w-full mb-15">
         About me
       </h2>
-      <div className="w-9/12 grid grid-cols-[1fr_1fr] gap-5">
-        <div className="grid  justify-items-start h-fit gap-5">
+      <div className="w-9/12 grid md:grid-cols-[1fr_1fr] gap-5">
+        <div className="grid md:justify-items-start gap-5 h-fit">
           <AboutMeCard
             titleBold=""
             body="Hi! I’m Lautaro Fernández Szutner, a Full Stack Web Developer based in Buenos Aires. I love turning ideas into clean, functional, and user-friendly web applications."
-            width="w-full"
+            width="w-fit"
             icon={<Rocket />}
           ></AboutMeCard>
-          <div className="flex gap-5">
+          <div className="grid gap-5 h-fit w-full md:grid-cols-[1fr_1fr]">
             <AboutMeCard
               titleBold="Location:"
               body="Buenos Aires"
-              width="w-fit"
+              width="w-full"
               icon={<HomeIcon />} // 👈 Aquí pasas el ícono
             ></AboutMeCard>
 
             <AboutMeCard
               titleBold="Education:"
               body="Davinci institute BA"
-              width="w-fit"
+              width="w-full"
               icon={<Education />} // 👈 Aquí pasas el ícono
             ></AboutMeCard>
           </div>

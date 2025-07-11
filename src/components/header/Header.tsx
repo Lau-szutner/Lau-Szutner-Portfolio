@@ -24,8 +24,8 @@ function Header() {
       className="h-fit overflow-hidden background py-30 grid place-items-center"
       id="Home "
     >
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 place-items-center h-full lg:w-11/12 md:w-9/12 gap-15">
-        <div className="text-start flex flex-col gap-5">
+      <div className="grid md:grid-cols-2 place-items-center h-full lg:w-11/12 md:w-9/12 gap-15">
+        <div className="grid gap-5">
           <div className="text-5xl md:text-6xl lg:text-8xl mb-6">
             <p>
               <span className="text-accent">Hey there!</span>

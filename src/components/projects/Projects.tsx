@@ -69,7 +69,7 @@ const Projects = () => {
       className="h-min-screen flex flex-col place-items-center gap-5 pt-30 w-full"
       id="Projects"
     >
-      <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold text-center w-full mb-15">
+      <h2 className="text-6xl md:text-6xl lg:text-8xl  font-bold text-center w-full mb-15">
         Projects
       </h2>
       <div className="flex items-center  justify-center w-11/12">
