@@ -11,7 +11,7 @@ const ContacMe = () => {
               <div className="w-full">
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium mb-2 text-left pl-2"
+                  className="block text-sm font-bold mb-2 text-left pl-2"
                 >
                   Your Name
                 </label>
@@ -27,7 +27,7 @@ const ContacMe = () => {
               <div className="w-full">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium mb-2 text-left pl-2"
+                  className="block text-sm font-bold mb-2 text-left pl-2"
                 >
                   Your Email
                 </label>
@@ -43,7 +43,7 @@ const ContacMe = () => {
               <div className="w-full">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium mb-2 text-left pl-2"
+                  className="block text-sm font-bold mb-2 text-left pl-2"
                 >
                   Message
                 </label>
@@ -58,7 +58,7 @@ const ContacMe = () => {
               </div>
               <button
                 type="submit"
-                className="w-full py-3 px-6 flex items-center justify-center gap-2 bg-gradient-to-r from-darktech-neon-green to-darktech-holo-cyan text-darktech-background font-medium rounded-lg transition-transform duration-300 hover:scale-[1.02] disabled:opacity-70"
+                className="w-full py-3 px-6 flex items-center justify-center gap-2 bg-gradient-to-r from-darktech-neon-green to-darktech-holo-cyan text-darktech-background font-bold rounded-lg transition-transform duration-300 hover:scale-[1.02] disabled:opacity-70"
               >
                 {/* Send Icon */}
                 <svg

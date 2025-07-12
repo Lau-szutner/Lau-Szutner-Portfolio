@@ -26,21 +26,19 @@ function Header() {
     >
       <div className="grid md:grid-cols-2 place-items-center h-full lg:w-11/12 md:w-9/12 gap-15">
         <div className="grid gap-5">
-          <div className="text-5xl md:text-6xl lg:text-8xl mb-6">
+          <div className="text-5xl md:text-6xl lg:text-7xl mb-6">
             <p>
               <span className="text-accent">Hey there!</span>
               I'm
             </p>
           </div>
-          <div className="text-5xl md:text-6xl lg:text-8xl font-bold">
+          <div className="text-5xl md:text-6xl lg:text-7xl font-bold">
             <p>Lautaro</p>
             <p>Fernandez</p>
             <p>Szutner</p>
           </div>
           <div className="flex gap-4">
-            <Button link={'https://github.com/Lau-szutner/portfolio'}>
-              Github
-            </Button>
+            <Button link={'https://github.com/Lau-szutner'}>Github</Button>
 
             <Button
               link={
@@ -50,7 +48,7 @@ function Header() {
               Linkedin
             </Button>
 
-            <Button link={'mailto:lautaro.szutner@gmail.com'}>Email</Button>
+            <Button link={'mailto:lautaroszutner@gmail.com'}>Email</Button>
           </div>
         </div>
 
