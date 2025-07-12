@@ -14,7 +14,7 @@ const Experience: React.FC<Props> = ({ title, dates, description }) => {
           <h3 className="font-bold text-xl w-6/12">{title}</h3>
           <p>{dates}</p>
         </div>
-        <p className="text-xl mt-3">{description}</p>
+        <p className="mt-3">{description}</p>
       </div>
     </div>
   );

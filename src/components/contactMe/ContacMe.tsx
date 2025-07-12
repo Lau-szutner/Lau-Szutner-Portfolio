@@ -7,7 +7,7 @@ const ContacMe = () => {
           <h3 className="text-2xl font-bold mb-6 text-left">Send a Message</h3>
 
           <Container>
-            <form className=" w-full grid place-items-center">
+            <form className="w-full grid place-items-center gap-5">
               <div className="w-full">
                 <label
                   htmlFor="name"

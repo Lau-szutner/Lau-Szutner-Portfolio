@@ -10,7 +10,7 @@ function Header() {
       if (window.innerWidth > 1500) {
         setScale(1.5);
       } else {
-        setScale(1);
+        setScale(1.3);
       }
     };
 

@@ -54,7 +54,7 @@ export default function GitHubStats() {
     <section id="Github" className="py-20 relative w-9/12 place-self-center">
       <div className="w-full mx-auto grid gap-5 place-items-center">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">GitHub Public Stats</h2>
+          <h2 className="text-6xl font-bold mb-4">GitHub Public Stats</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             A visualization of my coding activities and contributions on GitHub.
           </p>
