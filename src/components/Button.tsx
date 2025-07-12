@@ -12,6 +12,7 @@ const Button: React.FC<ButtonProps> = ({ children, link }) => {
       <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
 
       {/* Botón encima */}
+
       <button className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[#00ffea]">
         <a href={link}>{children}</a>
       </button>
