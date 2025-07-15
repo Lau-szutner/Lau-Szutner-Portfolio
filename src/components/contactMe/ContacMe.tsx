@@ -1,9 +1,9 @@
 const ContacMe = () => {
   return (
-    <section className="w-full grid place-items-center">
-      <div className="grid lg:grid-cols-2 gap-10 w-9/12 place-items-center items-stretch min-h-[650px]">
+    <section className="py-20 relative w-9/12 place-self-center">
+      <div className="w-full grid lg:grid-cols-2 gap-10 place-items-center min-h-[650px]">
         {/* Form Panel */}
-        <div className="w-full h-full flex flex-col">
+        <div className="h-full flex flex-col">
           <h3 className="text-2xl font-bold mb-6 text-left">Send a Message</h3>
 
           <Container>
@@ -85,7 +85,6 @@ const ContacMe = () => {
         <div className="w-full h-full flex flex-col">
           <h3 className="text-2xl font-bold mb-6 text-left">Contact Info</h3>
           <Container>
-            <div></div>
             {/* Contact Info Panel */}
             <div className="">
               <div className="">
@@ -114,7 +113,7 @@ const ContacMe = () => {
                       href="mailto:lautaro.szutner@gmail.com"
                       className="text-darktech-muted hover:text-darktech-neon-green transition-colors break-all"
                     >
-                      lautaro.szutner@gmail.com
+                      lautaroszutner@gmail.com
                     </a>
                   </div>
                 </div>
@@ -177,7 +176,7 @@ const ContacMe = () => {
                       rel="noopener noreferrer"
                       className="text-darktech-muted hover:text-darktech-cyber-pink transition-colors break-words"
                     >
-                      github.com/Lau-szutner/portfolio
+                      github.com/Lau-szutner
                     </a>
                   </div>
                 </div>
