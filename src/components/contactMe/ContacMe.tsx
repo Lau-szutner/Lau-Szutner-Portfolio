@@ -1,9 +1,9 @@
 const ContacMe = () => {
   return (
     <section className="w-full grid place-items-center">
-      <div className="grid lg:grid-cols-2 gap-10 w-9/12 place-items-center">
+      <div className="grid lg:grid-cols-2 gap-10 w-9/12 place-items-center items-stretch min-h-[650px]">
         {/* Form Panel */}
-        <div className="w-full">
+        <div className="w-full h-full flex flex-col">
           <h3 className="text-2xl font-bold mb-6 text-left">Send a Message</h3>
 
           <Container>
@@ -82,7 +82,7 @@ const ContacMe = () => {
           </Container>
         </div>
 
-        <div className="w-full">
+        <div className="w-full h-full flex flex-col">
           <h3 className="text-2xl font-bold mb-6 text-left">Contact Info</h3>
           <Container>
             <div></div>
