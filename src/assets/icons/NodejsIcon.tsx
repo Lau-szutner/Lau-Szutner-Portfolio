@@ -1,3 +1,4 @@
+import { SVGProps } from 'react';
 export default function Nodejs(props: SVGProps<SVGSVGElement>) {
   return (
     <svg

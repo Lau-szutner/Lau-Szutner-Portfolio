@@ -1,3 +1,4 @@
+import { SVGProps } from 'react';
 export default function Html5(props: SVGProps<SVGSVGElement>) {
   return (
     <svg

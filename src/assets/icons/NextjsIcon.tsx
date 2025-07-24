@@ -1,3 +1,4 @@
+import { SVGProps } from 'react';
 export default function Nextjs(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
