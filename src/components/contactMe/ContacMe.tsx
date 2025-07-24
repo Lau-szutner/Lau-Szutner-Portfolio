@@ -2,7 +2,7 @@ import FormPanel from './FormPanel';
 import InfoPanel from './InfoPanel';
 const ContacMe = () => {
   return (
-    <section className="py-20 w-full grid place-items-center">
+    <section className="py-20 w-full grid place-items-center" id="Contact">
       <div className="w-9/12 grid place-items-cente gap-5 md:grid-cols-2">
         <FormPanel />
         <InfoPanel />
