@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectsCard';
 
+import criptoMerch from '../../assets/projects/Cripto-Merch.png';
+import moneyMind from '../../assets/projects/moneyMind.png';
+
 type IconName =
   | 'react'
   | 'javascript'
@@ -22,38 +25,46 @@ interface ProjectSkill {
 }
 
 interface ProjectProps {
-  title: string;
   skills: ProjectSkill[];
+  image: string;
+  title: string;
+  githubUrl: string;
+  webUrl: string;
 }
 
 const projects: ProjectProps[] = [
   {
     title: 'MoneyMind',
+    image: moneyMind,
     skills: [
       { iconName: 'react', label: 'React' },
       { iconName: 'javascript', label: 'Javascript' },
       { iconName: 'typescript', label: 'Typescript' },
       { iconName: 'nextjs', label: 'Nextjs' },
     ],
+    webUrl: 'nnn',
+    githubUrl: 'https://github.com/Lau-szutner/Money-Mind',
   },
   {
     title: 'Cripto Merch',
+    image: criptoMerch,
     skills: [
       { iconName: 'html', label: 'html' },
       { iconName: 'css', label: 'css' },
       { iconName: 'Bootstrap', label: 'Bootstrap' },
-      { iconName: 'nextjs', label: 'Nextjs' },
     ],
+    webUrl: 'https://lau-szutner.github.io/Cripto-Merch/',
+    githubUrl: 'https://github.com/Lau-szutner/Cripto-Merch',
   },
-  {
-    title: 'MoneyMind',
-    skills: [
-      { iconName: 'react', label: 'React' },
-      { iconName: 'javascript', label: 'Javascript' },
-      { iconName: 'typescript', label: 'Typescript' },
-      { iconName: 'nextjs', label: 'Nextjs' },
-    ],
-  },
+  // {
+  //   title: 'MoneyMind',
+  //   skills: [
+  //     { iconName: 'react', label: 'React' },
+  //     { iconName: 'javascript', label: 'Javascript' },
+  //     { iconName: 'typescript', label: 'Typescript' },
+  //     { iconName: 'nextjs', label: 'Nextjs' },
+  //   ],
+  // },
   // agrega más proyectos...
 ];
 
