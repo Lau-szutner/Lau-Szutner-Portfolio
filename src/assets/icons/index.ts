@@ -10,6 +10,7 @@ import Git from './GitIcon';
 import Nodejs from './NodejsIcon';
 import Express from './ExpressIcon';
 import Tailwind from './TailwindIcon';
+import Bootstrap from './BootstrapIcon';
 
 const icons = {
   css: CssIcon,
@@ -24,6 +25,7 @@ const icons = {
   nodejs: Nodejs,
   express: Express,
   tailwind: Tailwind,
+  Bootstrap: Bootstrap,
   // agrega más aquí
 };
 

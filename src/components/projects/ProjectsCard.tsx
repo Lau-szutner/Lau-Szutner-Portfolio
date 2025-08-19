@@ -31,9 +31,14 @@ const ProjectCard: React.FC<ProjectProps> = ({ skills, title }) => {
             <ul className="space-y-2 grid sm:grid-cols-2">
               {skills.map((skill, index) => {
                 const Icon = icons[skill.iconName];
+
+                // Solo Bootstrap será 1.5x más grande
+                const iconClass =
+                  skill.iconName === 'Bootstrap' ? 'w-12 h-12' : 'w-10 h-10';
+
                 return (
                   <li key={index} className="flex items-center gap-2">
-                    <Icon className="w-10 h-10" />
+                    <Icon className={iconClass} />
                     <span>{skill.label}</span>
                   </li>
                 );

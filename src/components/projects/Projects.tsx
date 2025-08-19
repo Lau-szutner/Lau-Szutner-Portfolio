@@ -13,7 +13,8 @@ type IconName =
   | 'css'
   | 'html'
   | 'php'
-  | 'tailwind';
+  | 'tailwind'
+  | 'Bootstrap';
 
 interface ProjectSkill {
   iconName: IconName;
@@ -36,11 +37,11 @@ const projects: ProjectProps[] = [
     ],
   },
   {
-    title: 'MoneyMind',
+    title: 'Cripto Merch',
     skills: [
-      { iconName: 'react', label: 'React' },
-      { iconName: 'javascript', label: 'Javascript' },
-      { iconName: 'typescript', label: 'Typescript' },
+      { iconName: 'html', label: 'html' },
+      { iconName: 'css', label: 'css' },
+      { iconName: 'Bootstrap', label: 'Bootstrap' },
       { iconName: 'nextjs', label: 'Nextjs' },
     ],
   },
