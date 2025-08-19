@@ -30,10 +30,7 @@ const AboutMe: React.FC = () => {
   ];
 
   return (
-    <div
-      className="flex flex-col gap-5 grid place-items-center w-full pt-30"
-      id="About"
-    >
+    <div className=" gap-5 grid place-items-center w-full pt-30" id="About">
       <h2 className="text-6xl  font-bold text-center w-full mb-15">About me</h2>
       <div className="w-9/12 grid xl:grid-cols-[1fr_1fr] gap-5">
         <div className="grid md:justify-items-start gap-5 h-fit">
@@ -48,14 +45,14 @@ const AboutMe: React.FC = () => {
               titleBold="Location:"
               body="Buenos Aires"
               width="w-full"
-              icon={<HomeIcon />} // 👈 Aquí pasas el ícono
+              icon={<HomeIcon />}
             ></AboutMeCard>
 
             <AboutMeCard
               titleBold="Education:"
               body="Davinci institute BA"
               width="w-full"
-              icon={<Education />} // 👈 Aquí pasas el ícono
+              icon={<Education />}
             ></AboutMeCard>
           </div>
         </div>
