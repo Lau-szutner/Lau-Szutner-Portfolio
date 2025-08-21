@@ -1,6 +1,9 @@
 // src/data/projectsData.ts
-import criptoMerch from '../../assets/projects/Cripto-Merch.png';
+import criptoMerch from '../../assets/projects/criptoMerch.png';
 import moneyMind from '../../assets/projects/moneyMind.png';
+
+import mrRobot from '../../assets/projects/mrRobot.png';
+
 import { ProjectProps } from './types';
 
 export const projects: ProjectProps[] = [
@@ -28,5 +31,17 @@ export const projects: ProjectProps[] = [
     ],
     webUrl: 'https://lau-szutner.github.io/Cripto-Merch/',
     githubUrl: 'https://github.com/Lau-szutner/Cripto-Merch',
+  },
+  {
+    title: 'Mr Robot Fan Page',
+    image: mrRobot,
+    body: 'Mr Robot Fan Page – One of my first web projects showcasing HTML, CSS, responsive design, and creative layout inspired by the TV series Mr Robot.  ',
+    skills: [
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+      { iconName: 'javascript', label: 'JAVASCRIPT' },
+    ],
+    webUrl: 'https://lau-szutner.github.io/Mr-Robot-Web-Page/',
+    githubUrl: 'https://github.com/Lau-szutner/Mr-Robot-Web-Page',
   },
 ];
