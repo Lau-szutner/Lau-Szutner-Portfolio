@@ -11,6 +11,7 @@ import Nodejs from './NodejsIcon';
 import Express from './ExpressIcon';
 import Tailwind from './TailwindIcon';
 import Bootstrap from './BootstrapIcon';
+import Vue from './VueIcon';
 
 const icons = {
   css: CssIcon,
@@ -26,6 +27,7 @@ const icons = {
   express: Express,
   tailwind: Tailwind,
   Bootstrap: Bootstrap,
+  Vue: Vue,
   // agrega más aquí
 };
 
