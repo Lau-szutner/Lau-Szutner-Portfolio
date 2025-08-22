@@ -7,28 +7,9 @@ import AboutMeCard from './AboutMeCard';
 import Experience from './Experience';
 import ExperienceList from './ExperienceList';
 
-const AboutMe: React.FC = () => {
-  const jobsList = [
-    {
-      title: 'Frontend Developer at EliumNova',
-      dates: 'Jan 2024 - Present',
-      description:
-        'Building responsive web applications using React and Tailwind CSS, focusing on UI/UX improvements and performance optimization.',
-    },
-    {
-      title: 'Full Stack Developer at WebSolutions',
-      dates: 'Jun 2022 - Dec 2023',
-      description:
-        'Developed end-to-end web applications with MERN stack, integrating REST APIs and ensuring scalability.',
-    },
-    {
-      title: 'Junior Developer at CodeFactory',
-      dates: 'Jan 2021 - May 2022',
-      description:
-        'Assisted in building and maintaining client websites, writing clean code and improving website SEO and accessibility.',
-    },
-  ];
+import jobsList from './jobsList';
 
+const AboutMe: React.FC = () => {
   return (
     <div className=" gap-5 grid place-items-center w-full pt-30" id="About">
       <h2 className="text-6xl  font-bold text-center w-full mb-15">About me</h2>
