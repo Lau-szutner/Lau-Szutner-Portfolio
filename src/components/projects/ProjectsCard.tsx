@@ -1,5 +1,5 @@
 import icons from '../../assets/icons';
-import { ProjectProps } from '../data/types';
+import { ProjectProps } from '@/components/data/data';
 
 const ProjectCard: React.FC<ProjectProps> = ({
   skills,
@@ -23,16 +23,18 @@ const ProjectCard: React.FC<ProjectProps> = ({
 
           <div>
             <p className="font-bold">Tecnologías usadas:</p>
-            <ul className="space-y-2 grid sm:grid-cols-2">
+            <ul className="flex flex-wrap gap-4 mt-10 min-w-0">
               {skills.map((skill, index) => {
                 const Icon = icons[skill.iconName];
                 const iconClass =
-                  skill.iconName === 'Bootstrap' ? 'w-12 h-12' : 'w-10 h-10';
+                  skill.iconName === 'Bootstrap' ? 'w-10 h-10' : 'w-10 h-10';
 
                 return (
                   <li key={index} className="flex items-center gap-2">
-                    <Icon className={iconClass} />
-                    <span>{skill.label}</span>
+                    <span className="flex items-center justify-center">
+                      <Icon className={iconClass} />
+                    </span>
+                    {/* <span className="flex items-center">{skill.label}</span> */}
                   </li>
                 );
               })}

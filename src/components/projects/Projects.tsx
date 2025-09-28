@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectsCard';
-import { projects } from '../data/projectsData.ts';
+import { projects } from '@/components/data/data';
 
 const Projects = () => {
   const [current, setCurrent] = useState(0);

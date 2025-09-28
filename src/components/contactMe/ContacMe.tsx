@@ -1,5 +1,6 @@
 import FormPanel from './FormPanel';
 import InfoPanel from './InfoPanel';
+
 const ContacMe = () => {
   return (
     <section className="py-20 w-full grid place-items-center" id="Contact">

@@ -2,16 +2,16 @@ import Container from './Container';
 
 const InfoPanel: React.FC = () => {
   return (
-    <div className="w-full grid grid gap-10 place-items-center min-h-[650px]">
+    <div className="w-full grid gap-10 place-items-center min-h-[650px]">
       <div className="w-full h-full flex flex-col">
         <h3 className="text-2xl font-bold mb-6 text-left">Contact Info</h3>
         <Container>
           {/* Contact Info Panel */}
           <div className="">
-            <div className="">
+            <div className="grid gap-4">
               {/* Email */}
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-darktech-card text-darktech-neon-green shrink-0">
+              <div className="flex items-center gap-4 ">
+                <div className=" p-3 rounded-full bg-darktech-card text-darktech-neon-green shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -28,18 +28,18 @@ const InfoPanel: React.FC = () => {
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                   </svg>
                 </div>
-                <div className="min-w-0">
-                  <h4 className="text-lg font-medium text-left">Email</h4>
+                <div>
+                  <h4 className="text-lg font-bold text-left">Email:</h4>
                   <a
                     href="mailto:lautaro.szutner@gmail.com"
-                    className="text-darktech-muted hover:text-darktech-neon-green transition-colors break-all"
+                    className="text-lg"
                   >
                     lautaroszutner@gmail.com
                   </a>
                 </div>
               </div>
               {/* LinkedIn */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-darktech-card text-darktech-holo-cyan shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,20 +58,20 @@ const InfoPanel: React.FC = () => {
                     <circle cx="4" cy="4" r="2"></circle>
                   </svg>
                 </div>
-                <div className="min-w-0">
-                  <h4 className="text-lg font-medium text-left">LinkedIn</h4>
+                <div>
+                  <h4 className="text-lg font-bold text-left">LinkedIn:</h4>
                   <a
                     href="https://ar.linkedin.com/in/lautaro-fernandez-szutner-203639277"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-darktech-muted hover:text-darktech-holo-cyan transition-colors break-words"
+                    className="text-bold text-lg"
                   >
                     linkedin.com/in/lautaro-fernandez-szutner-203639277
                   </a>
                 </div>
               </div>
               {/* GitHub */}
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-darktech-card text-darktech-cyber-pink shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,13 +89,13 @@ const InfoPanel: React.FC = () => {
                     <path d="M9 18c-4.51 2-5-2-7-2"></path>
                   </svg>
                 </div>
-                <div className="min-w-0">
-                  <h4 className="text-lg font-medium text-left">GitHub</h4>
+                <div>
+                  <h4 className="text-lg font-bold text-left">GitHub:</h4>
                   <a
                     href="https://github.com/Lau-szutner/portfolio"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-darktech-muted hover:text-darktech-cyber-pink transition-colors break-words"
+                    className="text-lg"
                   >
                     github.com/Lau-szutner
                   </a>
