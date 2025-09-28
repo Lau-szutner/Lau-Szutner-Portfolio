@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Button from '../Button';
+import Button from '@/components/Button.tsx';
 import Tilt from 'react-parallax-tilt';
 import { portfolioData } from '../data/data.ts';
 
@@ -36,7 +36,7 @@ function Header() {
         <div className="grid gap-5">
           <div className="text-5xl md:text-6xl lg:text-7xl mb-6">
             <p>
-              <span className="text-accent">Hey there! </span>
+              <span className="text-[var(--tint)]">Hey there! </span>
               I'm
             </p>
           </div>

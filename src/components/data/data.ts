@@ -20,10 +20,15 @@ export interface Contact {
   phone: string;
 }
 
+export interface Colors {
+  tint: string;
+}
+
 export interface PortfolioData {
   personalInfo: PersonalInfo;
   skills: string[];
   contact: Contact;
+  colors: Colors;
 }
 
 export const portfolioData: PortfolioData = {
@@ -44,5 +49,9 @@ export const portfolioData: PortfolioData = {
   contact: {
     email: 'tuemail@example.com',
     phone: '+54 9 11 1234-5678',
+  },
+  colors: {
+    tint: '#ff0022',
+    // tint: 'var(--tint)',
   },
 };

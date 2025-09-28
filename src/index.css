@@ -21,18 +21,10 @@ body {
   background-color: #caf0f8;
 }
 
-.bg-accent {
-  background-color: #00ffea;
-}
-
 .text-primary {
   color: #00ff00;
 }
 
 .text-secondary {
   color: #caf0f8;
-}
-
-.text-accent {
-  color: #00ffea;
 }

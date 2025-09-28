@@ -12,9 +12,9 @@ const ProjectCard: React.FC<ProjectProps> = ({
   return (
     <div className="!box-border relative group xl:m-10 w-11/12 lg:w-11/12 cursor-pointer">
       {/* Glow de fondo */}
-      <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
+      <div className="absolute inset-0 rounded-md bg-[var(--tint)] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
 
-      <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[#00ffea] grid gap-10 md:grid-cols-2">
+      <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[var(--tint)] grid gap-10 md:grid-cols-2">
         <img src={image} alt="" className="self-center" />
 
         <div className="gap-10 grid">

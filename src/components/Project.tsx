@@ -14,10 +14,10 @@ const Project: React.FC<ProjectProps> = ({ skills, title }) => {
   return (
     <div className="relative flex items-center justify-center group">
       {/* Glow de fondo */}
-      <div className="absolute inset-0 rounded-lg bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
+      <div className="absolute inset-0 rounded-lg bg-[var(--tint)] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
 
       {/* Contenedor principal */}
-      <div className="relative z-10 bg-slate-700 text-white rounded-lg border-2 border-slate-500 hover:border-[#00ffea]">
+      <div className="relative z-10 bg-slate-700 text-white rounded-lg border-2 border-slate-500 hover:border-[var(--tint)]">
         <img
           src="https://picsum.photos/350/200"
           alt="Project"

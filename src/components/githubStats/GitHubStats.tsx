@@ -188,9 +188,9 @@ export default function GitHubStats() {
           </div>
 
           <div className={`w-full h-fit !box-border relative group`}>
-            <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
+            <div className="absolute inset-0 rounded-md bg-[var(--tint)] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
 
-            <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[#00ffea]">
+            <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[var(--tint)]">
               <div className="flex items-center mb-4">
                 <span className="text-cyan-400 mr-2">
                   <Arrow></Arrow>
@@ -215,9 +215,9 @@ export default function GitHubStats() {
           </div>
 
           <div className={`w-full h-fit !box-border relative group`}>
-            <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
+            <div className="absolute inset-0 rounded-md bg-[var(--tint)] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
 
-            <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[#00ffea]">
+            <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[var(--tint)]">
               <div className="grid lg:grid-cols-2 gap-6 mx-auto place-items-center">
                 <img
                   src={`https://github-readme-stats.vercel.app/api?username=lau-szutner&show_icons=true&hide_border=true&title_color=ffffff&icon_color=00ffea&&text_color=ffffff&bg_color=00000000`}
@@ -234,9 +234,9 @@ export default function GitHubStats() {
           </div>
 
           <div className={`w-fit h-fit !box-border relative group`}>
-            <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
+            <div className="absolute inset-0 rounded-md bg-[var(--tint)] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
 
-            <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[#00ffea]">
+            <div className="relative z-10 bg-neutral-800 text-white p-5 rounded-md border-2 border-neutral-700 hover:border-[var(--tint)]">
               <a
                 href="https://github.com/lau-szutner"
                 target="_blank"

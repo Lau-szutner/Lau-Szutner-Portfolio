@@ -79,7 +79,7 @@ const Projects = () => {
             key={idx}
             onClick={() => setCurrent(idx)}
             className={`w-3 h-3 rounded-full cursor-pointer ${
-              current === idx ? 'bg-[#00ffea]' : 'bg-neutral-600'
+              current === idx ? 'bg-[var(--tint)]' : 'bg-neutral-600'
             }`}
             aria-label={`Ir al proyecto ${idx + 1}`}
           />
