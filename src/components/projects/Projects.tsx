@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectsCard';
-import { projects } from './projectsData';
+import { projects } from '../data/projectsData.ts';
 
 const Projects = () => {
   const [current, setCurrent] = useState(0);
@@ -20,7 +20,7 @@ const Projects = () => {
         {/* Botón anterior */}
         <button
           onClick={prev}
-          className="bg-neutral-700 hover:bg-neutral-600 rounded-full w-12 aspect-square flex items-center justify-center text-2xl transition"
+          className="bg-neutral-700 hover:bg-neutral-600 rounded-full w-12 aspect-square flex items-center justify-center text-2xl transition cursor-pointer"
           aria-label="Anterior"
         >
           <svg
@@ -40,7 +40,7 @@ const Projects = () => {
         </button>
 
         {/* Card activa */}
-        <div className="w-full flex justify-center overflow-hidden">
+        <div className="w-full flex justify-center ">
           <div
             key={current}
             className="w-full flex justify-center animate-fade-slide"
@@ -52,7 +52,7 @@ const Projects = () => {
         {/* Botón siguiente */}
         <button
           onClick={next}
-          className="bg-neutral-700 hover:bg-neutral-600 rounded-full w-12 aspect-square flex items-center justify-center text-2xl transition"
+          className="bg-neutral-700 hover:bg-neutral-600 rounded-full w-12 aspect-square flex items-center justify-center text-2xl transition cursor-pointer"
           aria-label="Siguiente"
         >
           <svg
@@ -73,12 +73,12 @@ const Projects = () => {
       </div>
 
       {/* Indicadores */}
-      <div className="flex gap-2">
+      <div className="flex gap-2 ">
         {projects.map((_, idx) => (
           <button
             key={idx}
             onClick={() => setCurrent(idx)}
-            className={`w-3 h-3 rounded-full ${
+            className={`w-3 h-3 rounded-full cursor-pointer ${
               current === idx ? 'bg-[#00ffea]' : 'bg-neutral-600'
             }`}
             aria-label={`Ir al proyecto ${idx + 1}`}

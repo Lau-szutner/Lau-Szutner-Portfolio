@@ -1,5 +1,5 @@
 import icons from '../../assets/icons';
-import { ProjectProps } from './types';
+import { ProjectProps } from '../data/types';
 
 const ProjectCard: React.FC<ProjectProps> = ({
   skills,
@@ -10,7 +10,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
   webUrl,
 }) => {
   return (
-    <div className="!box-border relative group xl:m-10 w-11/12 lg:w-11/12">
+    <div className="!box-border relative group xl:m-10 w-11/12 lg:w-11/12 cursor-pointer">
       {/* Glow de fondo */}
       <div className="absolute inset-0 rounded-md bg-[#00ffea] opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-300 z-0"></div>
 
@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
 
         <div className="gap-10 grid">
           <h2 className="text-3xl font-bold">{title}</h2>
-          <p>{body}</p>
+          <p className="cursor-text">{body}</p>
 
           <div>
             <p className="font-bold">Tecnologías usadas:</p>

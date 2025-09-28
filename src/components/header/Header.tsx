@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Button from '../Button';
 import Tilt from 'react-parallax-tilt';
-import { portfolioData } from '../data.ts';
+import { portfolioData } from '../data/data.ts';
 
 function Header() {
   const [scale, setScale] = useState(1);

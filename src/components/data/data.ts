@@ -15,12 +15,6 @@ export interface PersonalInfo {
   socialLinks: SocialLinks;
 }
 
-export interface Project {
-  name: string;
-  description: string;
-  url: string;
-}
-
 export interface Contact {
   email: string;
   phone: string;
@@ -29,7 +23,6 @@ export interface Contact {
 export interface PortfolioData {
   personalInfo: PersonalInfo;
   skills: string[];
-  projects: Project[];
   contact: Contact;
 }
 
@@ -46,19 +39,8 @@ export const portfolioData: PortfolioData = {
       email: 'mailto:lautaroszutner@gmail.com',
     },
   },
+
   skills: ['React', 'Node.js', 'MongoDB', 'Express'],
-  projects: [
-    {
-      name: 'Portfolio Web',
-      description: 'Mi portfolio personal en React',
-      url: 'https://mi-portfolio.com',
-    },
-    {
-      name: 'App de Tareas',
-      description: 'Aplicación de gestión de tareas',
-      url: 'https://mi-app.com',
-    },
-  ],
   contact: {
     email: 'tuemail@example.com',
     phone: '+54 9 11 1234-5678',
