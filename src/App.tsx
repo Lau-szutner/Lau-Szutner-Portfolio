@@ -9,7 +9,7 @@ import ContacMe from './components/contactMe/ContacMe';
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
       <Header />
       <Projects />
       <AboutMe />

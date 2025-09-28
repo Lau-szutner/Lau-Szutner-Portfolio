@@ -1,9 +1,17 @@
 import { useState, useEffect } from 'react';
 import Button from '../Button';
 import Tilt from 'react-parallax-tilt';
+import { portfolioData } from '../data.ts';
 
 function Header() {
   const [scale, setScale] = useState(1);
+
+  const name = portfolioData.personalInfo.name;
+  const title = portfolioData.personalInfo.title;
+  const github = portfolioData.personalInfo.socialLinks.github;
+  const linkedin = portfolioData.personalInfo.socialLinks.linkedin;
+  const email = portfolioData.personalInfo.socialLinks.email;
+  const profileImage = portfolioData.personalInfo.profileImage;
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,22 +41,19 @@ function Header() {
             </p>
           </div>
           <div className="text-5xl md:text-6xl lg:text-7xl font-bold">
-            <p>Lautaro</p>
-            <p>Fernandez</p>
-            <p>Szutner</p>
+            <div className="text-5xl md:text-6xl lg:text-7xl font-bold">
+              {name.split(' ').map((part, idx) => (
+                <p key={idx}>{part}</p>
+              ))}
+              <p className="text-xl text-gray-400 font-light my-5">{title}</p>
+            </div>
           </div>
           <div className="flex gap-4">
-            <Button link={'https://github.com/Lau-szutner'}>Github</Button>
+            <Button link={github}>Github</Button>
 
-            <Button
-              link={
-                'https://ar.linkedin.com/in/lautaro-fernandez-szutner-203639277?original_referer=https%3A%2F%2Far.linkedin.com%2Fpub%2Fdir%2FLautaro%2FFernandez%2Far-0-Argentina'
-              }
-            >
-              Linkedin
-            </Button>
+            <Button link={linkedin}>Linkedin</Button>
 
-            <Button link={'mailto:lautaroszutner@gmail.com'}>Email</Button>
+            <Button link={email}>Email</Button>
           </div>
         </div>
 
@@ -56,7 +61,7 @@ function Header() {
           <Tilt tiltReverse={false} scale={scale}>
             <div className="line">
               <img
-                src="/photo-perfil.png"
+                src={profileImage}
                 alt="Foto de perfil"
                 className="rounded-lg"
               />
