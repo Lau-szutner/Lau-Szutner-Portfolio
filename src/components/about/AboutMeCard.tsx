@@ -2,7 +2,7 @@ interface Props {
   titleBold: string;
   body: string;
   width: string;
-  icon: React.ReactNode; // 👈 Nuevo!
+  icon: React.ReactNode; 
 }
 
 const AboutMeCard: React.FC<Props> = ({ titleBold, body, width, icon }) => {
