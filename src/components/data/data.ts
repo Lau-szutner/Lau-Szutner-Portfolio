@@ -11,6 +11,20 @@ import todoListVue from '../../assets/projects/todoListVue.png';
 import alejandraQueiruga from '../../assets/projects/alejandraQueiruga.png';
 import ticTacToeInfinty from '../../assets/projects/ticTacToeInfinty.png';
 
+ type NavLink = {
+  label: string;
+  id: string;
+};
+
+export const navBarLinks: NavLink[] = [
+  { label: "Home", id: "Home" },
+  { label: "Projects", id: "Projects" },
+  { label: "About", id: "About" },
+  { label: "Github", id: "Github" },
+  { label: "Contact", id: "Contact" },
+];
+
+
 
 export interface SocialLinks {
   github: string;
@@ -77,7 +91,7 @@ export const portfolioData: PortfolioData = {
 export const projects: ProjectProps[] = [
   {
     title: 'MoneyMind',
-    body: 'Money Mind es una aplicación de gestión financiera que permite controlar ingresos, gastos, presupuestos y ahorros. Desarrollada con Next.js y Express.js usando Sequelize y MySQL, sigue una arquitectura MVC escalable y permite la autenticación de usuarios mediante JWT.',
+    body: 'Money Mind is a financial management app that lets you track income, expenses, budgets, and savings. Developed with Next.js and Express.js using Sequelize and MySQL, it follows a scalable MVC architecture and allows user authentication via JWT.',
     image: moneyMind,
     skills: [
       { iconName: 'react', label: 'React' },

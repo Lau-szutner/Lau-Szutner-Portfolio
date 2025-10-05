@@ -1,14 +1,16 @@
-import { useState } from 'react';
 import ProjectCard from './ProjectsCard';
+import { useState } from 'react';
 import { projects } from '@/components/data/data';
 
+const INITIAL_CURRENT_PROJECT = 0
+
 const Projects = () => {
-  const [current, setCurrent] = useState(0);
+  const [currentProject, setCurrentProject] = useState(INITIAL_CURRENT_PROJECT); //currentProject que? currentProject project
 
   const prev = () =>
-    setCurrent((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+    setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
   const next = () =>
-    setCurrent((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+    setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
 
   return (
     <section
@@ -39,17 +41,17 @@ const Projects = () => {
           </svg>
         </button>
 
-        {/* Card activa */}
+      
         <div className="w-full flex justify-center ">
           <div
-            key={current}
+            key={currentProject}
             className="w-full flex justify-center animate-fade-slide"
           >
-            <ProjectCard {...projects[current]} />
+            <ProjectCard {...projects[currentProject]} />
           </div>
         </div>
 
-        {/* Botón siguiente */}
+      
         <button
           onClick={next}
           className="bg-neutral-700 hover:bg-neutral-600 rounded-full w-12 aspect-square flex items-center justify-center text-2xl transition cursor-pointer"
@@ -72,14 +74,14 @@ const Projects = () => {
         </button>
       </div>
 
-      {/* Indicadores */}
+      
       <div className="flex gap-2 ">
         {projects.map((_, idx) => (
           <button
             key={idx}
-            onClick={() => setCurrent(idx)}
+            onClick={() => setCurrentProject(idx)}
             className={`w-3 h-3 rounded-full cursor-pointer ${
-              current === idx ? 'bg-[var(--tint)]' : 'bg-neutral-600'
+              currentProject === idx ? 'bg-[var(--tint)]' : 'bg-neutral-600'
             }`}
             aria-label={`Ir al proyecto ${idx + 1}`}
           />

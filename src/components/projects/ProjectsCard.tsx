@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
           <p className="cursor-text">{body}</p>
 
           <div>
-            <p className="font-bold">Tecnologías usadas:</p>
+            <p className="font-bold">Technologies used:</p>
             <ul className="flex flex-wrap gap-4 mt-10 min-w-0">
               {skills.map((skill, index) => {
                 const Icon = icons[skill.iconName];
