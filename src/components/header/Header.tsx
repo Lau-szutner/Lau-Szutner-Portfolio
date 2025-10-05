@@ -63,7 +63,7 @@ function Header() {
               <img
                 src={profileImage}
                 alt="Foto de perfil"
-                className="rounded-lg"
+                className="rounded-lg cursor-pointer"
               />
             </div>
           </Tilt>

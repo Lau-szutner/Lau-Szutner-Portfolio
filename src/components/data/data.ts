@@ -8,6 +8,9 @@ import mrRobot from '../../assets/projects/mrRobot.png';
 import praga from '../../assets/projects/praga.png';
 import razer from '../../assets/projects/razer.png';
 import todoListVue from '../../assets/projects/todoListVue.png';
+import alejandraQueiruga from '../../assets/projects/alejandraQueiruga.png';
+import ticTacToeInfinty from '../../assets/projects/ticTacToeInfinty.png';
+
 
 export interface SocialLinks {
   github: string;
@@ -81,6 +84,10 @@ export const projects: ProjectProps[] = [
       { iconName: 'javascript', label: 'Javascript' },
       { iconName: 'typescript', label: 'Typescript' },
       { iconName: 'nextjs', label: 'Nextjs' },
+      { iconName: 'nodejs', label: 'NODEJS' },
+      { iconName: 'git', label: 'GIT' },
+      { iconName: 'express', label: 'EXPRESS' },
+      { iconName: 'sequelize', label: 'SEQUELIZE' },
     ],
     webUrl: 'https://github.com/Lau-szutner/Money-Mind',
     githubUrl: 'https://github.com/Lau-szutner/Money-Mind',
@@ -133,7 +140,6 @@ export const projects: ProjectProps[] = [
     webUrl: 'https://lau-szutner.github.io/Cripto-Merch/',
     githubUrl: 'https://github.com/Lau-szutner/Cripto-Merch',
   },
-
   {
     title: 'Praga',
     image: praga,
@@ -145,5 +151,34 @@ export const projects: ProjectProps[] = [
     ],
     webUrl: 'https://lau-szutner.github.io/Mr-Robot-Web-Page/',
     githubUrl: 'https://github.com/Lau-szutner/Mr-Robot-Web-Page',
+  },{
+    title: 'Portfolio Alejandra Queiruga',
+    image: alejandraQueiruga,
+    body: 'A modern, responsive portfolio website for a criminal law attorney, built with React, Next.js, and TypeScript. Showcases legal expertise, services, and contact information.',
+    skills: [
+      { iconName: 'react', label: 'REACT' },
+      { iconName: 'typescript', label: 'TYPESCRIPT' },
+      { iconName: 'nextjs', label: 'NEXTJS' },
+      { iconName: 'tailwind', label: 'TAILWIND' },
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+      { iconName: 'javascript', label: 'JAVASCRIPT' },
+    ],
+    webUrl: 'https://alejandra-queiruga.vercel.app/',
+    githubUrl: 'https://github.com/Lau-szutner/portfolio-alejandra-queiruga',
+  },
+  {
+    title: 'Tic-Tac-Infinity',
+    image: ticTacToeInfinty,
+    body: 'Custom Tic Tac Toe game with two modes — classic and a no-draw infinite mode where ties are prevented by undoing the last move.',
+    skills: [
+      { iconName: 'javascript', label: 'JAVACRIPT' },
+      { iconName: 'react', label: 'REACT' },
+      { iconName: 'tailwind', label: 'TAILWIND' },
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+    ],
+    webUrl: 'https://lau-szutner.github.io/Tic-Tac-Infinity/',
+    githubUrl: 'https://github.com/Lau-szutner/Tic-Tac-Infinity/tree/main',
   },
 ];
