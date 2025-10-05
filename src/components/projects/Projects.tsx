@@ -5,7 +5,7 @@ import { projects } from '@/components/data/data';
 const INITIAL_CURRENT_PROJECT = 0
 
 const Projects = () => {
-  const [currentProject, setCurrentProject] = useState(INITIAL_CURRENT_PROJECT); //currentProject que? currentProject project
+  const [currentProject, setCurrentProject] = useState(INITIAL_CURRENT_PROJECT); 
 
   const prev = () =>
     setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
