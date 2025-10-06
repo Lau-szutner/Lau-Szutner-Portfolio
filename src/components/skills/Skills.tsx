@@ -1,6 +1,8 @@
-import icons from "@/assets/icons/index";
+import icons from '@/assets/icons/index';
 
 const Skills = () => {
+  console.log(icons);
+
   return (
     <section
       id="Skills"
