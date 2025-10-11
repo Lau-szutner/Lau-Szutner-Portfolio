@@ -11,20 +11,18 @@ import todoListVue from '../../assets/projects/todoListVue.png';
 import alejandraQueiruga from '../../assets/projects/alejandraQueiruga.png';
 import ticTacToeInfinty from '../../assets/projects/ticTacToeInfinty.png';
 
- type NavLink = {
+type NavLink = {
   label: string;
   id: string;
 };
 
 export const navBarLinks: NavLink[] = [
-  { label: "Home", id: "Home" },
-  { label: "Projects", id: "Projects" },
-  { label: "About", id: "About" },
-  { label: "Github", id: "Github" },
-  { label: "Contact", id: "Contact" },
+  { label: 'Home', id: 'Home' },
+  { label: 'Projects', id: 'Projects' },
+  { label: 'About', id: 'About' },
+  { label: 'Github', id: 'Github' },
+  { label: 'Contact', id: 'Contact' },
 ];
-
-
 
 export interface SocialLinks {
   github: string;
@@ -165,7 +163,8 @@ export const projects: ProjectProps[] = [
     ],
     webUrl: 'https://lau-szutner.github.io/Mr-Robot-Web-Page/',
     githubUrl: 'https://github.com/Lau-szutner/Mr-Robot-Web-Page',
-  },{
+  },
+  {
     title: 'Portfolio Alejandra Queiruga',
     image: alejandraQueiruga,
     body: 'A modern, responsive portfolio website for a criminal law attorney, built with React, Next.js, and TypeScript. Showcases legal expertise, services, and contact information.',
