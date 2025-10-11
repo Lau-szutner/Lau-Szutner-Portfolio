@@ -51,6 +51,7 @@ export interface Colors {
 export interface PortfolioData {
   personalInfo: PersonalInfo;
   skills: string[];
+  skillsBegginer: string[];
 }
 
 export type IconName = keyof typeof icons;
@@ -83,7 +84,27 @@ export const portfolioData: PortfolioData = {
     },
   },
 
-  skills: ['React', 'Node.js', 'MongoDB', 'Express'],
+  skills: [
+    'react',
+    'javascript',
+    'typescript',
+    'nextjs',
+    'nodejs',
+    'sequelize',
+    'html',
+    'css',
+    'tailwind',
+    'express',
+    'Moongo',
+    'git',
+    'Npm',
+    'Figma',
+    'MySql',
+    'Api',
+    'JWT',
+  ],
+
+  skillsBegginer: ['Vue', 'Laravel', 'php'],
 };
 
 export const projects: ProjectProps[] = [
