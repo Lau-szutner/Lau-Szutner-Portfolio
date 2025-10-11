@@ -95,7 +95,6 @@ export const portfolioData: PortfolioData = {
     'css',
     'tailwind',
     'express',
-    'Moongo',
     'git',
     'Npm',
     'Figma',
@@ -104,7 +103,7 @@ export const portfolioData: PortfolioData = {
     'JWT',
   ],
 
-  skillsBegginer: ['Vue', 'Laravel', 'php'],
+  skillsBegginer: ['Vue', 'Laravel', 'php', 'Moongo'],
 };
 
 export const projects: ProjectProps[] = [
