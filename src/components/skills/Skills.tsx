@@ -1,3 +1,4 @@
+import icons from '@/assets/icons/index';
 import React from 'react';
 import icons from '@/assets/icons/index';
 import { portfolioData } from '../data/data';

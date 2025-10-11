@@ -12,6 +12,13 @@ import Express from './ExpressIcon';
 import Tailwind from './TailwindIcon';
 import Bootstrap from './BootstrapIcon';
 import Vue from './VueIcon';
+import Npm from './NpmIcon';
+import Moongo from './MoongoIcon';
+import Figma from './FigmaIcon';
+import JWT from './JWTIcon';
+import MySql from './MySqlIcon';
+import Laravel from './LaravelIcon';
+import Api from './ApiIcon';
 
 const icons = {
   css: CssIcon,
@@ -28,6 +35,13 @@ const icons = {
   tailwind: Tailwind,
   Bootstrap: Bootstrap,
   Vue: Vue,
+  Npm: Npm,
+  Moongo: Moongo,
+  Figma: Figma,
+  JWT: JWT,
+  MySql: MySql,
+  Laravel: Laravel,
+  Api: Api,
   // agrega más aquí
 };
 
