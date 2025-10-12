@@ -9,7 +9,7 @@ import praga from '../../assets/projects/praga.png';
 import razer from '../../assets/projects/razer.png';
 import todoListVue from '../../assets/projects/todoListVue.png';
 import alejandraQueiruga from '../../assets/projects/alejandraQueiruga.png';
-import ticTacToeInfinty from '../../assets/projects/ticTacToeInfinty.png';
+import ticTacToe from '../../assets/projects/ticTacToe.png';
 
 type NavLink = {
   label: string;
@@ -125,66 +125,6 @@ export const projects: ProjectProps[] = [
     githubUrl: 'https://github.com/Lau-szutner/Money-Mind',
   },
   {
-    title: 'Mr Robot Fan Page',
-    image: mrRobot,
-    body: 'Mr Robot Fan Page – One of my first web projects showcasing HTML, CSS, responsive design, and creative layout inspired by the TV series Mr Robot.  ',
-    skills: [
-      { iconName: 'html', label: 'HTML' },
-      { iconName: 'css', label: 'CSS' },
-      { iconName: 'javascript', label: 'JAVASCRIPT' },
-    ],
-    webUrl: 'https://lau-szutner.github.io/Praga-React/',
-    githubUrl: 'https://github.com/Lau-szutner/Praga-React',
-  },
-  {
-    title: 'To-do List Vue',
-    image: todoListVue,
-    body: 'This project is a To-Do List application developed using Vue.js. It enables users to add, edit, and delete tasks with seamless data persistence via Local Storage.',
-    skills: [
-      { iconName: 'Vue', label: 'VUE' },
-      { iconName: 'html', label: 'HTML' },
-      { iconName: 'javascript', label: 'JAVASCRIPT' },
-      { iconName: 'css', label: 'CSS' },
-    ],
-    webUrl: 'https://lau-szutner.github.io/Todo-list-vue/',
-    githubUrl: 'https://github.com/Lau-szutner/Todo-list-vue',
-  },
-  {
-    title: 'E-comerce Razer',
-    image: razer,
-    body: 'Este proyecto es un sitio web de comercio electrónico desarrollado en Bootstrap para la venta de productos de la marca Razer. Especificamente diseñado para ser utilizado como un proyecto universitario para https://davinci.edu.ar/',
-    skills: [
-      { iconName: 'html', label: 'HTML' },
-      { iconName: 'css', label: 'CSS' },
-    ],
-    webUrl: 'https://lau-szutner.github.io/Razer-Bootsrap/',
-    githubUrl: 'https://github.com/Lau-szutner/Razer-Bootsrap',
-  },
-  {
-    title: 'Cripto Merch',
-    image: criptoMerch,
-    body: 'E-commerce website dedicated to selling cryptocurrency-themed merchandise. This project was created as a university assignment to practice Bootstrap, HTML, and CSS, while building a modern and responsive online store.',
-    skills: [
-      { iconName: 'html', label: 'HTML' },
-      { iconName: 'Bootstrap', label: 'Bootstrap' },
-      { iconName: 'css', label: 'CSS' },
-    ],
-    webUrl: 'https://lau-szutner.github.io/Cripto-Merch/',
-    githubUrl: 'https://github.com/Lau-szutner/Cripto-Merch',
-  },
-  {
-    title: 'Praga',
-    image: praga,
-    body: 'Mr Robot Fan Page – One of my first web projects showcasing HTML, CSS, responsive design, and creative layout inspired by the TV series Mr Robot.  ',
-    skills: [
-      { iconName: 'html', label: 'HTML' },
-      { iconName: 'css', label: 'CSS' },
-      { iconName: 'javascript', label: 'JAVASCRIPT' },
-    ],
-    webUrl: 'https://lau-szutner.github.io/Mr-Robot-Web-Page/',
-    githubUrl: 'https://github.com/Lau-szutner/Mr-Robot-Web-Page',
-  },
-  {
     title: 'Portfolio Alejandra Queiruga',
     image: alejandraQueiruga,
     body: 'A modern, responsive portfolio website for a criminal law attorney, built with React, Next.js, and TypeScript. Showcases legal expertise, services, and contact information.',
@@ -202,7 +142,7 @@ export const projects: ProjectProps[] = [
   },
   {
     title: 'Tic-Tac-Infinity',
-    image: ticTacToeInfinty,
+    image: ticTacToe,
     body: 'Custom Tic Tac Toe game with two modes — classic and a no-draw infinite mode where ties are prevented by undoing the last move.',
     skills: [
       { iconName: 'javascript', label: 'JAVACRIPT' },
@@ -213,5 +153,66 @@ export const projects: ProjectProps[] = [
     ],
     webUrl: 'https://lau-szutner.github.io/Tic-Tac-Infinity/',
     githubUrl: 'https://github.com/Lau-szutner/Tic-Tac-Infinity/tree/main',
+  },
+  {
+    title: 'Cripto Merch',
+    image: criptoMerch,
+    body: 'E-commerce website dedicated to selling cryptocurrency-themed merchandise. This project was created as a university assignment to practice Bootstrap, HTML, and CSS, while building a modern and responsive online store.',
+    skills: [
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+      { iconName: 'Bootstrap', label: 'Bootstrap' },
+    ],
+    webUrl: 'https://lau-szutner.github.io/Cripto-Merch/',
+    githubUrl: 'https://github.com/Lau-szutner/Cripto-Merch',
+  },
+  {
+    title: 'Mr Robot Fan Page',
+    image: mrRobot,
+    body: 'Mr Robot Fan Page – One of my first web projects showcasing HTML, CSS, responsive design, and creative layout inspired by the TV series Mr Robot.  ',
+    skills: [
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+      { iconName: 'javascript', label: 'JAVASCRIPT' },
+    ],
+
+    webUrl: 'https://lau-szutner.github.io/Mr-Robot-Web-Page/',
+    githubUrl: 'https://github.com/Lau-szutner/Mr-Robot-Web-Page',
+  },
+  {
+    title: 'To-do List Vue',
+    image: todoListVue,
+    body: 'This project is a To-Do List application developed using Vue.js. It enables users to add, edit, and delete tasks with seamless data persistence via Local Storage.',
+    skills: [
+      { iconName: 'Vue', label: 'VUE' },
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'javascript', label: 'JAVASCRIPT' },
+      { iconName: 'css', label: 'CSS' },
+    ],
+    webUrl: 'https://lau-szutner.github.io/Todo-list-vue/',
+    githubUrl: 'https://github.com/Lau-szutner/Todo-list-vue',
+  },
+  {
+    title: 'Praga',
+    image: praga,
+    body: 'Mr Robot Fan Page – One of my first web projects showcasing HTML, CSS, responsive design, and creative layout inspired by the TV series Mr Robot.  ',
+    skills: [
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+      { iconName: 'javascript', label: 'JAVASCRIPT' },
+    ],
+    webUrl: 'https://lau-szutner.github.io/Praga-React/',
+    githubUrl: 'https://github.com/Lau-szutner/Praga-React',
+  },
+  {
+    title: 'E-comerce Razer',
+    image: razer,
+    body: 'Este proyecto es un sitio web de comercio electrónico desarrollado en Bootstrap para la venta de productos de la marca Razer. Especificamente diseñado para ser utilizado como un proyecto universitario para https://davinci.edu.ar/',
+    skills: [
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+    ],
+    webUrl: 'https://lau-szutner.github.io/Razer-Bootsrap/',
+    githubUrl: 'https://github.com/Lau-szutner/Razer-Bootsrap',
   },
 ];

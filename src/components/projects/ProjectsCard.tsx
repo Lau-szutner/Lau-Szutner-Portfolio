@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
               {skills.map((skill, index) => {
                 const Icon = icons[skill.iconName];
                 const iconClass =
-                  skill.iconName === 'Bootstrap' ? 'w-10 h-10' : 'w-10 h-10';
+                  skill.iconName === 'Bootstrap' ? 'w-14 h-14' : 'w-10 h-10';
 
                 return (
                   <li key={index} className="flex items-center gap-2">
